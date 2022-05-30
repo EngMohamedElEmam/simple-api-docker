@@ -23,13 +23,14 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 
 # You should now have a directory structure like:
+```
 .
 ├── app
 │   ├── __init__.py
 │   └── main.py
 ├── Dockerfile
 └── requirements.txt
-
+```
 
 ## Dockerfile
 
