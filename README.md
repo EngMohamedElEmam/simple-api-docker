@@ -77,12 +77,14 @@ You will see response something like:
     subscription_id	5012333226
 }
 
+![alt text](https://github.com/EngMohamedElEmam/simple-api-docker/blob/master/fastapi-HTTP-request.jpg?raw=true)
 
 ## Interactive API docs
 
 Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
 
-You will see the automatic interactive API documentation you can try excuting from it such as this : ![alt text](https://github.com/EngMohamedElEmam/simple-api-docker/blob/master/fastapi-swagger.jpg?raw=true)
+You will see the automatic interactive API documentation you can try excuting from it such as this : 
+![alt text](https://github.com/EngMohamedElEmam/simple-api-docker/blob/master/fastapi-swagger.jpg?raw=true)
 
 
 ## Refernce 
