@@ -82,7 +82,7 @@ You will see response something like:
 
 Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
 
-You will see the automatic interactive API documentation you can try excuting from it such as this screenshot: fastapi-swagger.jpg
+You will see the automatic interactive API documentation you can try excuting from it such as this : ![alt text](https://github.com/EngMohamedElEmam/simple-api-docker/blob/master/fastapi-swagger.jpg?raw=true)
 
 
 ## Refernce 
