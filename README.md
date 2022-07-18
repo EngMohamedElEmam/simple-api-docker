@@ -86,5 +86,5 @@ Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equiva
 You will see the automatic interactive API documentation you can try excuting from it such as this :  ![alt text](https://github.com/EngMohamedElEmam/simple-api-docker/blob/master/fastapi-swagger.jpg?raw=true)
 
 
-## Refernce 
+## Reference 
 [FastAPI documentation](https://fastapi.tiangolo.com/tutorial/getting-started/) for more information.
