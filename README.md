@@ -14,12 +14,12 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"get": "subscriptions"}
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+@app.get("/subscriptions/{subscription_id}")
+def read_item(subscription_id: int, service: Union[str, None] = None):
+    return {"subscription_id": subscription_id, "123": service}
 
 
 # You should now have a directory structure like:
@@ -68,15 +68,22 @@ $ docker run -d --name fastapi -p 80:80 myfastapi
 
 ## Check it
 
-You should be able to check it in your Docker container's URL, for example: http://192.168.99.100/items/5?q=somequery or http://127.0.0.1/items/5?q=somequery (or equivalent, using your Docker host).
+You should be able to check it in your Docker container's URL, for example: http://192.168.99.100/subscriptions/5012333226?service=PrepaidCharging or http://127.0.0.1/subscriptions/5012333226?service=PrepaidCharging (or equivalent, using your Docker host).
 
-You will see something like:
+You will see response something like:
 
-{"item_id": 5, "q": "somequery"}
+{
+    123	"PrepaidCharging"
+    subscription_id	5012333226
+}
 
 
 ## Interactive API docs
 
 Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
 
-You will see the automatic interactive API documentation
+You will see the automatic interactive API documentation you can try excuting from it such as this screenshot: fastapi-swagger.jpg
+
+
+## Refernce 
+[FastAPI documentation](https://fastapi.tiangolo.com/tutorial/getting-started/) for more information.
